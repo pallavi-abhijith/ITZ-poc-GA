@@ -1,0 +1,409 @@
+.parent-left-column {
+  width: 300px;
+  background: linear-gradient(135deg, #6BCF9A 0%, #4A8B9A 100%);
+  padding: 0.5rem 1rem 0rem 1rem;
+  border-right: 1px solid #ddd;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border-radius: 18px;
+  padding: 1rem 1rem 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  /* box-shadow: 0 2px 12px rgba(0,0,0,0.06); */
+}
+
+.profile-image {
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 0.5rem;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.3rem 0 0.5rem 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.profile-details {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.5;
+} 
+
+.parent-name {
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.profile-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  /* Removed floating effect */
+}
+
+.editable-detail {
+  transition: all 0.2s ease;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.editable-detail:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.editable-detail:focus {
+  outline: 2px solid #4b5ae5;
+  background: rgba(255,255,255,0.2);
+}
+
+.teacher-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: transparent;
+  border-radius: 12px;
+  border: none;
+  transition: all 0.4s ease;
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.teacher-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.teacher-info:hover::before {
+  left: 100%;
+}
+
+.teacher-info:hover {
+  background: transparent;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: none;
+}
+
+.teacher-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 0.8rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+.teacher-profile {
+  width: 100%;
+}
+
+.info-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  text-align: left;
+}
+
+.info-box {
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  border-left: 4px solid #667eea;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.info-box:hover {
+  border-left-color: #5a67d8;
+  background: #edf2f7;
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.teacher-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 1.5rem 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.teacher-name:hover {
+  color: rgba(255,255,255,0.9);
+  transform: scale(1.05);
+}
+
+.teacher-name::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: rgba(255,255,255,0.8);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.teacher-name:hover::after {
+  width: 100%;
+}
+
+.subject-taught {
+  font-size: 0.85rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.subject-taught:hover {
+  color: #764ba2;
+  transform: translateY(-1px);
+}
+
+.message-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.message-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+.message-btn:active {
+  transform: translateY(0) scale(0.98);
+  transition: all 0.1s ease;
+}
+
+.message-icon {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.message-btn:hover .message-icon {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.profile-header {
+  margin-bottom: 0.3rem;
+}
+
+.profile-divider {
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d8c9ab, transparent);
+  margin: 1rem auto;
+  opacity: 0.6;
+}
+
+.teacher-details-section {
+  background: transparent;
+  padding: 0.8rem;
+  margin-top: 0.8rem;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+  align-self: stretch;
+  width: calc(100% - 0px);
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.teacher-details-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.teacher-details-section:hover::before {
+  left: 100%;
+}
+
+.teacher-details-section:hover {
+  transform: translateY(-2px);
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.teacher-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  text-align: left !important;
+  position: relative;
+  letter-spacing: 0.3px;
+}
+
+.teacher-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 1px;
+}
+
+.teacher-detail-item {
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  background: transparent;
+  border-radius: 8px;
+  border-left: 3px solid rgba(255,255,255,0.6);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.teacher-detail-item:hover {
+  transform: translateX(5px);
+  background: rgba(255,255,255,0.1);
+  border-left-color: rgba(255,255,255,0.9);
+  box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+}
+
+.teacher-detail-item:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 0.3rem 0;
+  text-align: left !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+.detail-value {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+  text-align: left !important;
+  transition: color 0.3s ease;
+}
+
+.teacher-detail-item:hover .detail-value {
+  color: rgba(255,255,255,0.9);
+}
+
+.simple-message-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.simple-message-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.simple-message-btn:hover::before {
+  left: 100%;
+}
+
+.simple-message-btn:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.5);
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+.simple-message-btn:active {
+  transform: translateY(-1px) scale(0.98);
+  transition: all 0.1s ease;
+}
+
+.simple-message-btn .message-icon {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.simple-message-btn:hover .message-icon {
+  transform: rotate(10deg) scale(1.1);
+}

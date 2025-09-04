@@ -1,0 +1,222 @@
+.right-sidebar-teacher {
+  width: 400px;
+  background: linear-gradient(135deg, #7BC8A3 0%, #5A9A8A 100%);
+  border-left: 1px solid #e0e0e0;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.sidebar-section h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Notifications Section */
+.notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notification-item {
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.notification-item:hover {
+  transform: translateX(-3px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-item.assignment {
+  border-left-color: #28a745;
+  background: #d4edda;
+}
+
+.notification-item.message {
+  border-left-color: #007bff;
+  background: #d1ecf1;
+}
+
+.notification-item.grade {
+  border-left-color: #ffc107;
+  background: #fff3cd;
+}
+
+.notification-item.reminder {
+  border-left-color: #dc3545;
+  background: #f8d7da;
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.notification-message {
+  font-size: 13px;
+  color: #1a2a2b;
+  font-weight: 500;
+}
+
+.notification-time {
+  font-size: 11px;
+  color: #306F78;
+}
+
+/* Student Tiles Grid */
+.student-tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.student-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.student-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: #667eea;
+}
+
+.student-tile.present {
+  border-left: 4px solid #28a745;
+}
+
+.student-tile.absent {
+  border-left: 4px solid #dc3545;
+  opacity: 0.7;
+}
+
+.student-avatar {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 3px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-emoji {
+  font-size: 32px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.attendance-indicator {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.attendance-indicator.present {
+  background: #28a745;
+}
+
+.attendance-indicator.absent {
+  background: #dc3545;
+}
+
+.student-tile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.student-tile-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.student-tile-grade {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .right-sidebar {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .student-tiles-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .student-tile {
+    padding: 12px 8px;
+  }
+  
+  .student-avatar {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .avatar-emoji {
+    font-size: 24px;
+  }
+  
+  .student-tile-name {
+    font-size: 11px;
+  }
+  
+  .student-tile-grade {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .student-tiles-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
