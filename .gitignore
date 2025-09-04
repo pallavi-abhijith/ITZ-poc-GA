@@ -1,0 +1,18 @@
+# Node
+node_modules/
+.cache/
+dist/
+build/
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# CV
+
+
+# Avatar
+
+
+# System
