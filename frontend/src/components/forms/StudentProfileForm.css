@@ -40,6 +40,7 @@
 .student-profile-error {
   border: 2px solid #EC221F;
   background: #F0F9D6;
+  margin-bottom: 25px;
 }
 
 .student-profile-form-group {
