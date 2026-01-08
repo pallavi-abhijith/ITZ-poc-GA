@@ -1,0 +1,50 @@
+{
+  "sample_topic": {
+    "questions": [
+      {
+        "question": "What is the main purpose of reading comprehension?",
+        "choices": {
+          "A": "To memorize facts",
+          "B": "To understand and interpret text",
+          "C": "To speed read",
+          "D": "To skip difficult words"
+        },
+        "correct_answer": "B",
+        "explanation": "Reading comprehension is about understanding and interpreting the meaning of text, not just memorizing facts or reading quickly."
+      },
+      {
+        "question": "Which of the following is a good reading strategy?",
+        "choices": {
+          "A": "Reading without stopping",
+          "B": "Taking notes while reading",
+          "C": "Skipping difficult sections",
+          "D": "Reading only the first sentence of each paragraph"
+        },
+        "correct_answer": "B",
+        "explanation": "Taking notes while reading helps you engage with the material and remember key points."
+      },
+      {
+        "question": "What does 'context clues' refer to in reading?",
+        "choices": {
+          "A": "The font size of the text",
+          "B": "Hints in the surrounding text that help understand unknown words",
+          "C": "The page numbers",
+          "D": "The author's name"
+        },
+        "correct_answer": "B",
+        "explanation": "Context clues are hints found in the surrounding text that help readers understand the meaning of unfamiliar words."
+      },
+      {
+        "question": "Why is it important to preview a text before reading?",
+        "choices": {
+          "A": "To avoid reading the whole text",
+          "B": "To get an overview and activate prior knowledge",
+          "C": "To find the answers quickly",
+          "D": "To skip difficult parts"
+        },
+        "correct_answer": "B",
+        "explanation": "Previewing helps readers get an overview of the content and activate their prior knowledge about the topic."
+      }
+    ]
+  }
+} 

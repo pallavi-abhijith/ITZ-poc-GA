@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  background: linear-gradient(270deg, #44746d 5%, #3D6661 24%, #365956 51%, #2F4B4B 76%, #283d40 97%);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.homepage {
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
+  background: linear-gradient(270deg, #44746d 5%, #3D6661 24%, #365956 51%, #2F4B4B 76%, #283d40 97%);
+  display: flex ;
+  align-items: center;
+  justify-content: center;  
+  min-height: 100vh; /* Account for header height */
+  padding: 3rem;
+}
+
+.homepage-bridge {
+  display: flex;
+  white-space: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -15rem;
+  margin-bottom: -4.5rem;
+  color: #8E7558;
+  width: 229px;
+  height: 38px;
+}
+
+.homepage-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -0.5rem;
+  margin-bottom: -19rem;
+  color: #F0F9D6;
+  width: 550px;
+  height: 340px;
+}
+
+.homepage-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.homepage-bridge p {
+  font-size: 1vw;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  line-height: 1.75rem;
+}
+
+.homepage-text p {
+  font-size: 1.6vw;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  line-height: 1.75rem;
+}
+
+/* Highlighted image style */
+
+.ITZ-highlight-image {
+  max-width: 1000px;
+  width: 32%;
+  margin: -20rem 0 1rem ;
+  opacity: 1;
+}
+.students-highlight-image {
+  max-width: 1000px;
+  width: 40%;
+  margin: 1rem 2rem 4rem;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .homepage-content {
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+  /*.homepage-text {
+    width: auto;    /*90% of viewport width
+    height: auto;   /* Let height grow with content 
+    margin-top: 50vw;
+    margin-left: 25vw; /* Remove or reduce left margin 
+    margin-bottom: 1vw;
+  }
+  .homepage-text p{
+    font-size: 2vw;
+    line-height: 1.5rem;
+  }
+
+  .homepage-bridge {
+  margin-left: -8rem;
+  margin-bottom: -0.5rem;
+  width: auto;
+  height: auto;
+}
+}*/
+
